@@ -1,0 +1,189 @@
+
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: white;
+  color: rgb(99, 99, 99);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+button{
+    background: rgba(37, 37, 199, 0.836) ;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;;
+}
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: hsl(0, 0%, 27%);
+}
+
+
+nav {
+  background: white;
+  
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color:hsl(205, 78%, 60%);
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: hsl(209, 61%, 16%);
+  transform: rotate(90deg);
+}
+.logo {
+  height: 40px;
+}
+.links a {
+  color: hsl(209, 34%, 30%);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+.links a:hover {
+  background: blue;
+  color: white;
+  border-radius: 20px;
+  padding-left: 1.5rem;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition:all 0.3s linear;
+}
+.show-links {
+  height: 10rem;
+}
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+  }
+  .links a {
+    padding: 10px;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+ 
+ 
+}
+
+.about .row{
+    background: white;
+    padding:50px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+}
+
+.about .cta{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right img{
+    width: 80%;
+    float: inline-end;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.count-soon p{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 1.5rem;
+}
+.count-down{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.day,
+.hour,
+.minute,
+.second{
+    font-size: 2rem;
+}
+
+@media (max-width: 700px){
+    .about .row{
+        grid-template-columns: 1fr;
+    }
+   
+
+@media (max-width: 500px) {
+    .count-down{
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+}

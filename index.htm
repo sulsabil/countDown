@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../countDown/app.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="" width="100px" height="100px" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+       
+      </div>
+    </nav>
+
+    <section class="about"> 
+        <div class="row">
+           <div class="left">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, illo?</p>
+                <h1>Opportunities <br><span class="bolder">Designed</span> For Real Life</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam libero, ratione ullam eveniet amet fugiat animi nisi unde expedita sunt.</p>
+                <div class="cta">
+                    <div class="cta1">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, quisquam!</p>
+                    </div>
+                    <div class="cta2">
+                        <button>Donate</button>
+                    </div>
+                </div>
+           </div>
+           <div class="right">
+               <img src="../countDown/img/people-4417185_1920.png" alt="" srcset="">
+           </div>
+        </div>
+    </section>
+
+    <section class="count-soon">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, molestias!</p>
+<div class="count-down">
+<div class="container-day">
+    <h3 class="day"></h3>
+    <p>day</p>
+</div>
+<div class="container-hour">
+    <h3 class="hour"></h3>
+    <p>hour</p>
+</div>
+<div class="container-minute">
+    <h3 class="minute"></h3>
+    <p>minute</p>
+</div>
+<div class="container-second">
+    <h3 class="second"></h3>
+    <p>second</p>
+</div>
+</div>
+    </section>
+
+    <!-- javascript -->
+    <script src="../countDown/app.js"></script>
+  </body>
+</html>
