@@ -1,105 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>countDown</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>countDown</title>
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="../countDown/app.css" />
+  </head>
 
-  <!-- styles -->
-  <link rel="stylesheet" href="../countDown/app.css" />
-</head>
-
-<body>
-  <div id="wrap">
-    <nav>
-      <div class="nav-center">
-        <!-- nav header -->
-        <div class="nav-header">
-          <img src="" width="100px" height="100px" class="logo" alt="logo" />
-          <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
+  <body>
+    <div class="container">
+      
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="" width="100px" height="100px" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <ul class="links">
+            <li>
+              <a href="#">home</a>
+            </li>
+            <li>
+              <a href="#">about</a>
+            </li>
+            <li>
+              <a href="#">projects</a>
+            </li>
+            <li>
+              <a href="#">contact</a>
+            </li>
+          </ul>
         </div>
-        <!-- links -->
-        <ul class="links">
-          <li>
-            <a href="#">home</a>
-          </li>
-          <li>
-            <a href="#">about</a>
-          </li>
-          <li>
-            <a href="#">projects</a>
-          </li>
-          <li>
-            <a href="#">contact</a>
-          </li>
-          
-        </ul>
-      </div>
-    </nav>
-     <!--about section -->
-     <section class="about">
-      <div class="row">
-        <div class="left">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-            illo?
-          </p>
-          <h1>Get insights <br> <span>that help</span>  your business grow</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur 
-            adipisicing  Veniam
-            libero, <br> ratione ullam eveniet amet fugiat animi <br>
-            nisi unde expedita sunt. 
-          </p>
-          
-          <div class="cta">
-            <div class="cta cta1">
-              <p>
-                Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-            <div class="cta cta2">
-              <button class="btn">Start now</button>
+      
+      <!--about section -->
+      <section class="about">
+        <div class="row">
+          <div class="left">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <h1>
+              Get insights <br />
+              <span>that help</span> your business grow
+            </h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing Veniam libero,
+              <br />
+              ratione ullam eveniet amet fugiat animi <br />
+              nisi unde expedita sunt.
+            </p>
+  
+            <div class="cta">
+              <div class="cta cta1">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="cta cta2">
+                <button class="btn">Start now</button>
+              </div>
             </div>
           </div>
+          <div class="right">
+            <img
+              src="../countDown/img/people-4417185_1920.png"
+              alt=""
+              srcset=""
+            />
+          </div>
         </div>
-        <div class="right">
-          <img src="../countDown/img/people-4417185_1920.png" alt="" srcset="" />
-        </div>
-      </div>
-    </section>
-        <!--count-down-->
-        <section class="count-down">
-            <p>dolor sit amet consectetur adipisicing elit. Dolorem itaque ad, expedita sit voluptate nulla.</p>
-      <div class="count-box">
+      </section>
+      <!--count-down-->
+      <section class="count-down">
+        <p>
+          dolor sit amet consectetur adipisicing elit. Dolorem itaque ad, expedita
+          sit voluptate nulla.
+        </p>
+        <div class="count-box">
           <div class="container-day">
-              <h3 class="day">1</h3>
-              <p>day</p>
-            </div>
-            <div class="container-hour">
-              <h3 class="hour">23</h3>
-              <p>hour</p>
-            </div>
-            <div class="container-minute">
-              <h3 class="minute">23</h3>
-              <p>minute</p>
-            </div>
-            <div class="container-second">
-              <h3 class="second">32</h3>
-              <p>second</p>
-              </div>
-      </div>
-          
-          </section>
-  </div>
+            <h3 class="day">1</h3>
+            <p>day</p>
+          </div>
+          <div class="container-hour">
+            <h3 class="hour">23</h3>
+            <p>hour</p>
+          </div>
+          <div class="container-minute">
+            <h3 class="minute">23</h3>
+            <p>minute</p>
+          </div>
+          <div class="container-second">
+            <h3 class="second">32</h3>
+            <p>second</p>
+          </div>
+        </div>
+      </section>
+    </div>
 
-  <!-- javascript -->
-  <script src="../countDown/app.js"></script>
-</body>
-
+    <!-- javascript -->
+    <script src="../countDown/app.js"></script>
+  </body>
 </html>

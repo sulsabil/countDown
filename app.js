@@ -6,7 +6,7 @@ navToggle.addEventListener("click", function () {
 });
 
 
-var countDate = new Date("july 16,2021 00:00:00").getTime();
+var countDate = new Date("july 30,2021 00:00:00").getTime();
 console.log(countDate);
 
 const time = setInterval(function () {
