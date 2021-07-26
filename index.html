@@ -17,7 +17,7 @@
   <body>
     <div class="container">
       
-        <div class="nav-center">
+        <div class="nav-center" id="nav">
           <!-- nav header -->
           <div class="nav-header">
             <h1 class="logo">logo</h1>
@@ -87,21 +87,27 @@
         </p>
         <div class="count-box">
           <div class="time container-day">
-            <h3 class="day">1</h3>
+            <h3 class="day">0</h3>
             <p>day</p>
           </div>
           <div class="time container-hour">
-            <h3 class="hour">23</h3>
+            <h3 class="hour">0</h3>
             <p>hour</p>
           </div>
           <div class="time container-minute">
-            <h3 class="minute">23</h3>
+            <h3 class="minute">0</h3>
             <p>minute</p>
           </div>
           <div class="time container-second">
-            <h3 class="second">32</h3>
+            <h3 class="second">0</h3>
             <p>second</p>
           </div>
+        </div>
+        <p class="demo"></p>
+        <div class="setTime">
+          <input type="datetime-local" name="start_date" id="start_date" >
+          <input type="datetime-local" name="end_date" id="end_date" >
+          <button class="btn" onclick="myFunction()">start</button>
         </div>
       </section>
       </div>
