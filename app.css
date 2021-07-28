@@ -147,6 +147,7 @@ img {
   background: blue;
   cursor: pointer;
   transition: all 0.3s linear;
+  text-transform: uppercase;
 
 }
 
@@ -349,5 +350,36 @@ img {
 
   .about .row .right img {
     width: 50%;
+  }
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  transition: all 150ms ease-in-out;
+}
+.grid img{
+  border-radius: .5rem;
+  /* width: 70%;
+  height: auto; */
+}
+.grid img:hover{
+  transform: scale(1.05);
+}
+@media screen and (min-width:768px){
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1rem;
   }
 }
